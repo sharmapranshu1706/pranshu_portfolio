@@ -1,21 +1,12 @@
 "use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
     const currentYear = new Date().getFullYear();
-    const [counterUrl, setCounterUrl] = useState<string | null>(null);
-
-    useEffect(() => {
-        // Safe to access window only on client
-        const origin = window.location.origin;
-        setCounterUrl(
-            `https://counter.websiteout.com/compte.php?S=${encodeURIComponent(origin)}&C=20&D=0&N=0&M=1`
-        );
-    }, []);
+    const counterUrl = typeof window !== "undefined"
+    ? `https://counter.websiteout.com/compte.php?S=${encodeURIComponent(window.location.origin)}&C=20&D=0&N=0&M=1`
+    : null;
 
     return (
         <footer className="w-full border-t border-border bg-card dark:bg-[#0d0d0e] py-20 px-6 font-mono transition-colors duration-300">

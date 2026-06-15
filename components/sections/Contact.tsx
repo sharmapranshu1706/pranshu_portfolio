@@ -25,7 +25,7 @@ export default function Contact() {
         register,
         handleSubmit,
         reset,
-        formState: { errors },
+        formState: {},
     } = useForm<ContactFormValues>();
 
     const onSubmit = async (data: ContactFormValues) => {
