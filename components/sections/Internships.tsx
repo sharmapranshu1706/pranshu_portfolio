@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Briefcase, Calendar, MapPin, ArrowUpRight, CheckCircle2 } from "lucide-react";
+import { Briefcase, Calendar, ArrowUpRight, CheckCircle2 } from "lucide-react";
 import SectionWrapper from "@/components/common/SectionWrapper";
 import { internships } from "@/data/internships";
 

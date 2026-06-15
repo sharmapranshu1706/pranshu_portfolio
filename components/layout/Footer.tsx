@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaEnvelope } from "react-icons/fa";
@@ -103,10 +104,13 @@ export default function Footer() {
                                     className="inline-flex items-center"
                                     aria-label="Web Hit Counter"
                                 >
-                                    <img
+                                    <Image
                                         src={counterUrl}
                                         alt="Web Hit Counter"
+                                        width={100}
+                                        height={14}
                                         className="h-3.5 object-contain filter contrast-125 brightness-110"
+                                        unoptimized
                                     />
                                 </a>
                             </div>

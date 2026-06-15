@@ -50,9 +50,10 @@ export default function GitHubStats() {
     const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-    }, []);
+useEffect(() => {
+    setMounted(true);
+// eslint-disable-next-line react-hooks/exhaustive-deps
+}, []); // Mount check for theme-dependent rendering
 
     const themeQ = themeQuery(resolvedTheme);
 
