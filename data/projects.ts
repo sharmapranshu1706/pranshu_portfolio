@@ -31,7 +31,7 @@ export const projects: Project[] = [
         featured: true,
         image: "/images/AI-Fitness_APP.png",
     },
-//     
+
     {
         id: "SMART EMAIL ASSISTANT",
         title: "SMART EMAIL ASSISTANT",
@@ -61,7 +61,28 @@ export const projects: Project[] = [
         featured: true,
         image: "/images/SMART-EMAIL-ASSISTANT.png",
     },
-//     
+    {
+    id: "Portfolio",
+        title: "Personal Portfolio",
+        description:
+            "A high-performance personal website with advanced animations, glassmorphism, and a custom design system. Optimized for SEO and mobile responsiveness.",
+        longDescription: `A high-performance personal website built with Next.js 15, featuring advanced animations powered by Framer Motion and a custom design system. The portfolio showcases a sleek glassmorphism aesthetic, optimized for SEO and mobile responsiveness. It serves as a dynamic platform to highlight projects, skills, and experiences with an engaging user interface and seamless navigation.`,
+        techStack: ["Next.js 15", "Framer Motion", "Tailwind v4","TypeScript", "Vercel"], 
+          
+        category: "frontend",
+        features: [
+            "AI-powered workout recommendations based on user preferences and performance data",
+            "Real-time progress tracking with visual analytics",
+            "Microservices architecture for scalability and maintainability",
+            "Responsive React frontend for seamless user experience",
+            "Optimized for SEO and mobile responsiveness",
+        ],
+        liveUrl: "https://ai-fitness-app.vercel.app/",
+        githubUrl: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
+        featured: true,
+        image: "/images/AI-Fitness_APP.png",
+    }
+    
 ];
 
 export const featuredProjects = projects.filter((p) => p.featured);

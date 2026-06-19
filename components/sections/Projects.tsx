@@ -52,11 +52,11 @@ const PROJECTS: Project[] = [
     {
         id: "portfolio",
         title: "Personal Portfolio",
-        description: "High-performance personal website with advanced animations, glassmorphism, and a custom design system. Optimized for SEO and mobile responsiveness.",
+        description: "A high-performance personal website with advanced animations, glassmorphism, and a custom design system. Optimized for SEO and mobile responsiveness.",
         longDescription: `A high-performance personal website built with Next.js 15, featuring advanced animations powered by Framer Motion and a custom design system. The portfolio showcases a sleek glassmorphism aesthetic, optimized for SEO and mobile responsiveness. It serves as a dynamic platform to highlight projects, skills, and experiences with an engaging user interface and seamless navigation.`,
-        tech: ["Next.js 15", "Framer Motion", "Tailwind v4"],
+        tech: ["Next.js 15", "Framer Motion", "Tailwind v4", "TypeScript", "Vercel"],
         github: "https://github.com/sharmapranshu1706/pranshu_portfolio",
-        live: "",
+        live: "https://pranshu-portfolio-v1.vercel.app/",
         image: "/images/portfolio_v3.png",
         category: "Frontend",
     }
