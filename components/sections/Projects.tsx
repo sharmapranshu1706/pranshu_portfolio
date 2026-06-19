@@ -32,7 +32,7 @@ const PROJECTS: Project[] = [
         tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Redis"],
         github: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
         live: "",
-        image: "/images/AI-FITNESS-APP.png",
+        image: "/images/AI-Fitness-APP.png",
         category: "Full Stack",
     }
     ,
