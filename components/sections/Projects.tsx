@@ -17,28 +17,45 @@ interface Project {
     live?: string;
     image?: string;
     category: string;
+    longDescription?: string;
 }
 
 const PROJECTS: Project[] = [
     
     {
-        id: "lynkforge",
-        title: "Lynkforge",
-        description: "A production-ready URL shortening platform built with Spring Boot and React. Features JWT authentication, path-based routing, and a scalable microservices architecture.",
+        id: "AI-FITNESS MICROSERVICES APPLICATION",
+        title: "AI Fitness Microservices App",
+        description: "A modern full-stack fitness application with AI-powered workout recommendations and real-time progress tracking.",
+        longDescription: `A modern full-stack fitness application with AI-powered workout recommendations and real-time progress tracking. The AI Fitness Microservices Application is a cutting-edge platform that leverages artificial intelligence to provide personalized workout plans and real-time progress monitoring. 
+                          It features a microservices architecture built with Spring Boot and React, ensuring scalability and maintainability. 
+                          Users can interact with the application through a responsive frontend, while the backend handles complex AI algorithms and data processing.`,
         tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Redis"],
-        github: "",
+        github: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
         live: "",
-        image: "/images/lynkforge_v3.png",
+        image: "/images/AI-FITNESS-APP.png",
         category: "Full Stack",
     }
     ,
-
+    {
+        id: "SMART EMAIL ASSISTANT",
+        title: "SMART EMAIL ASSISTANT",
+        description: "An AI-powered email assistant that drafts, summarizes, and manages your inbox with natural language commands.",
+        longDescription: `The SMART EMAIL ASSISTANT is an innovative solution that leverages artificial intelligence to streamline email management. It can draft responses, summarize lengthy emails, and organize your inbox based on natural language commands. Built with React for the frontend and Node.js with OpenAI's GPT-4 API for the backend, it provides a seamless and efficient email experience.`,
+        tech: ["Spring Boot","React", "WebFlux", "GEMINI API", "Bootstrap","Maven" ],
+        github: "https://github.com/sharmapranshu1706/Email-Assistant-AI",
+        live: "",
+        image: "/images/SMART-EMAIL-ASSISTANT.png",
+        category: "Full Stack",
+    }
+        
+,
     {
         id: "portfolio",
         title: "Personal Portfolio",
         description: "High-performance personal website with advanced animations, glassmorphism, and a custom design system. Optimized for SEO and mobile responsiveness.",
+        longDescription: `A high-performance personal website built with Next.js 15, featuring advanced animations powered by Framer Motion and a custom design system. The portfolio showcases a sleek glassmorphism aesthetic, optimized for SEO and mobile responsiveness. It serves as a dynamic platform to highlight projects, skills, and experiences with an engaging user interface and seamless navigation.`,
         tech: ["Next.js 15", "Framer Motion", "Tailwind v4"],
-        github: "",
+        github: "https://github.com/sharmapranshu1706/pranshu_portfolio",
         live: "",
         image: "/images/portfolio_v3.png",
         category: "Frontend",

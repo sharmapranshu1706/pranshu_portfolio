@@ -35,13 +35,36 @@ export const projects: Project[] = [
 //         featured: true,
 //         image: "/images/eakhbar_v1.png",
 //     },
-//     {
-//         id: "flowkit",
-//         title: "FlowKit",
-//         description:
-//             "A collaborative team task management system with real-time updates, project tracking, and workspace isolation.",
-//         longDescription: `FlowKit is a comprehensive team collaboration tool designed to streamline project management. 
-//     It features real-time workspace updates, task assignment, status tracking, and a clean, 
+    {
+        id: "AI-FITNESS MICROSERVICES APPLICATION",
+        title: "AI Fitness Microservices App",
+        description:
+            "A modern full-stack fitness application with AI-powered workout recommendations and real-time progress tracking.",
+        longDescription: `The AI Fitness Microservices Application is a cutting-edge platform that leverages artificial intelligence to provide personalized workout plans and real-time progress monitoring. 
+    It features a microservices architecture built with Spring Boot and React, ensuring scalability and maintainability. 
+    Users can interact with the application through a responsive frontend, while the backend handles complex AI algorithms and data processing.`,
+        techStack: [
+            "Java",
+            "Spring Boot",
+            "React.js",
+            "MongoDB",
+            "Kafka",
+            "Keycloak",
+            "GEMINI API",
+        ],
+        category: "fullstack",
+        features: [
+            "AI-powered workout recommendations based on user preferences and performance data",
+            "Real-time progress tracking with visual analytics",
+            "Microservices architecture for scalability and maintainability",
+            "Responsive React frontend for seamless user experience",
+            "Integration with third-party fitness devices and APIs",
+        ],
+        liveUrl: "https://ai-fitness-app.vercel.app/",
+        githubUrl: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
+        featured: true,
+        image: "/images/AI-Fitness_APP.png",
+    },
 //     intuitive dashboard for teams to stay aligned. Built with a focus on speed and flow.`,
 //         techStack: [
 //             "React",
@@ -65,40 +88,35 @@ export const projects: Project[] = [
 //         featured: true,
 //         image: "/images/flowkit_v3.png",
 //     },
-//     {
-//         id: "lynkforge",
-//         title: "Lynkforge",
-//         description:
-//             "A production-ready URL shortener with real-time click analytics, custom aliases, and a clean dashboard. Built for scale with Spring Boot and React.",
-//         longDescription: `Lynkforge is a full-stack URL shortening platform inspired by Bitly. 
-//     It handles link creation, custom short aliases, expiry settings, and tracks every click 
-//     with metadata including referrer, device type, and timestamp. The dashboard gives users 
-//     a clear view of link performance in real time.`,
-//         techStack: [
-//             "Java",
-//             "Spring Boot",
-//             "Spring Security",
-//             "MySQL",
-//             "React",
-//             "TypeScript",
-//             "Tailwind CSS",
-//             "JWT",
-//             "Docker",
-//         ],
-//         category: "fullstack",
-//         features: [
-//             "Custom short alias creation with collision detection",
-//             "Real-time click analytics (referrer, device, timestamp)",
-//             "JWT-based user authentication with Spring Security",
-//             "Link expiry with scheduled cleanup jobs",
-//             "REST API with Swagger documentation",
-//             "Responsive React dashboard with live stats",
-//         ],
-//         liveUrl: "https://lynkforge.vercel.app",
-//         githubUrl: "https://github.com/prakharyadav/lynkforge",
-//         featured: true,
-//         image: "/images/lynkforge_v3.png",
-//     },
+    {
+        id: "SMART EMAIL ASSISTANT",
+        title: "SMART EMAIL ASSISTANT",
+        description:
+            "An AI-powered email assistant that drafts, summarizes, and manages your inbox with natural language commands. Built with React, Node.js, and OpenAI's GPT-4 API.",
+        longDescription: `The SMART EMAIL ASSISTANT is an innovative solution that leverages artificial intelligence to streamline email management. It can draft responses, summarize lengthy emails, and organize your inbox based on natural language commands. Built with React for the frontend and Node.js with OpenAI's GPT-4 API for the backend, it provides a seamless and efficient email experience.`,
+        techStack: [
+            "Java",
+            "Spring Boot",
+            "Maven",
+            "WebFlux",
+            "GEMINI API",
+            "Bootstrap",
+            "React.js",
+        ],
+        category: "fullstack",
+        features: [
+            "AI-powered email drafting and summarization",
+            "EMAIL Suggestions based on email content and user preferences",
+            "AI Reply generation for quick responses",
+            "Separate AI Reply Button for user control",
+            "GEMINI API integration for advanced natural language processing",
+            "WebFlux for reactive programming and efficient handling of concurrent requests",
+        ],
+        liveUrl: "",
+        githubUrl: "https://github.com/sharmapranshu1706/Email-Assistant-AI",
+        featured: true,
+        image: "/images/SMART-EMAIL-ASSISTANT.png",
+    },
 //     {
 //         id: "polytest-ai",
 //         title: "Polytest AI",
@@ -133,8 +151,8 @@ export const projects: Project[] = [
 //         image: "/images/polytest_v1.png",
 //     },
 //     {
-//         id: "ember-stone",
-//         title: "Ember & Stone",
+//         id: "AI-FITNESS MICROSERVICES APPLICATION",
+//         title: "AI Fitness Microservices App",
 //         description:
 //             "An immersive wood-fired fine dining reservation website and booking dashboard featuring an organic layout, stateful menu accordions, and interactive bookings.",
 //         longDescription: `Ember & Stone is a conceptual premium wood-fired restaurant landing page and online booking platform. 
