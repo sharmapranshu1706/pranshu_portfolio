@@ -56,7 +56,7 @@ export const projects: Project[] = [
             "GEMINI API integration for advanced natural language processing",
             "WebFlux for reactive programming and efficient handling of concurrent requests",
         ],
-        liveUrl: "",
+        liveUrl: "https://ai-fitness-app.vercel.app/",
         githubUrl: "https://github.com/sharmapranshu1706/Email-Assistant-AI",
         featured: true,
         image: "/images/SMART-EMAIL-ASSISTANT.png",
@@ -80,7 +80,7 @@ export const projects: Project[] = [
         liveUrl: "https://ai-fitness-app.vercel.app/",
         githubUrl: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
         featured: true,
-        image: "/images/AI-Fitness_APP.png",
+        image: "/images/portfolio_v3.png",
     }
     
 ];

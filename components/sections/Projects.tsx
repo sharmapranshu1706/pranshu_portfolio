@@ -31,7 +31,7 @@ const PROJECTS: Project[] = [
                           Users can interact with the application through a responsive frontend, while the backend handles complex AI algorithms and data processing.`,
         tech: ["Java", "Spring Boot", "React", "PostgreSQL", "Redis"],
         github: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
-        live: "",
+        live: "https://ai-fitness-app.vercel.app/",
         image: "/images/AI-Fitness-APP.png",
         category: "Full Stack",
     }
@@ -43,7 +43,7 @@ const PROJECTS: Project[] = [
         longDescription: `The SMART EMAIL ASSISTANT is an innovative solution that leverages artificial intelligence to streamline email management. It can draft responses, summarize lengthy emails, and organize your inbox based on natural language commands. Built with React for the frontend and Node.js with OpenAI's GPT-4 API for the backend, it provides a seamless and efficient email experience.`,
         tech: ["Spring Boot","React", "WebFlux", "GEMINI API", "Bootstrap","Maven" ],
         github: "https://github.com/sharmapranshu1706/Email-Assistant-AI",
-        live: "",
+        live: "https://email-assistant-ai.vercel.app/",
         image: "/images/SMART-EMAIL-ASSISTANT.png",
         category: "Full Stack",
     }
