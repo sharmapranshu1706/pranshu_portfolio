@@ -7,15 +7,21 @@ import { internships } from "@/data/internships";
 
 // Highlights per internship id — add real bullet points here
 const highlights: Record<string, string[]> = {
+    
+    "The Skybrisk-java-full-stack-developer-internship": [
+        "Designed and implemented database schemas using Spring Data JPA/Hibernate, integrated with PostgreSQL/MySQL (use whichever DB you used)",
+        "Implemented input validation and exception handling to improve API reliability and reduce runtime errors",
+        "Used Postman to test and debug REST endpoints, ensuring correct request/response behavior before integration",
+    ],
     "spark-ventures-java-intern": [
         "MVC backend for 3 production modules (10 000+ LOC)",
         "30% faster page load via lazy loading & query tuning",
         "Resolved 20+ prod bugs; Agile 2-week release cycle",
     ],
-    "ibm-frontend-intern": [
-        "Reusable React components, Redux global state",
-        "Real-time dashboards via REST API integration",
-        "Git workflow: branching, PRs, conflict resolution",
+    "ibm-skills-build-frontend-developer-internship": [
+        "Developed responsive web applications using HTML, CSS, and JavaScript",
+        "Implemented interactive UI components using React.js and Redux",
+        "Collaborated with design teams to translate wireframes into functional user interfaces",
     ],
 };
 
