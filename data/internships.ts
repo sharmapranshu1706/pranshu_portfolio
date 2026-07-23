@@ -10,7 +10,7 @@ export const internships: Internship[] = [
         from: "January 01, 2026",
         to: "June 30, 2026",
         url: "https://drive.google.com/file/d/16slI7E5VUpFt_ApWrwW0tE0-VnVjrN3n/view?usp=drive_link",
-        tags: ["React.js", "Redux", "REST APIs", "JavaScript", "Git"],
+        tags: ["Java", "Spring Boot", "React.js","Spring Data JPA","PostgreSQL","CI-CD", "Git"],
         featured: true,
     },
     {
