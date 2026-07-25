@@ -128,7 +128,7 @@ function ProjectCard({ project }: { project: Project }) {
                     {project.live && (
                         <Button
                             size="sm"
-                            className="flex-1 rounded bg-amber-500 text-black hover:bg-amber-600 font-mono h-10 text-xs font-bold"
+                            className="flex-1 rounded bg-amber-500 text-primary-foreground hover:bg-amber-600 font-mono h-10 text-xs font-bold"
                             asChild
                         >
                             <a href={project.live} target="_blank">
@@ -180,7 +180,7 @@ export default function Projects() {
                                 onClick={() => setFilter(c)}
                                 className={`px-4 py-1.5 rounded text-[10px] font-mono font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                                     filter === c 
-                                        ? "bg-amber-500 text-black border border-amber-500 shadow-lg shadow-amber-500/10" 
+                                        ? "bg-amber-500 text-primary-foreground border border-amber-500 shadow-lg shadow-amber-500/10"
                                         : "bg-secondary border border-border text-muted-foreground hover:bg-card hover:text-foreground"
                                 }`}
                             >

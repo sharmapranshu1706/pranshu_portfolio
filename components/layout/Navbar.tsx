@@ -9,7 +9,6 @@ import {
     SheetTrigger,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
-import ThemeToggle from "@/components/common/ThemeToggle";
 import { useScrollY } from "@/hooks/useScrollY";
 import { useActiveSection } from "@/hooks/useActiveSection";
 import { cn } from "@/lib/utils";
@@ -57,16 +56,11 @@ export default function Navbar() {
     return (
         <header
             className={cn(
-                "fixed top-6 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-8",
-                scrolled ? "top-4" : "top-6"
+                "fixed top-5 left-0 right-0 z-50 transition-all duration-500 px-4 md:px-8",
+                scrolled && "top-4"
             )}
         >
-            <nav className={cn(
-                "max-w-4xl mx-auto h-14 flex items-center justify-between px-6 rounded-full transition-all duration-300 font-mono",
-                scrolled 
-                    ? "bg-background/80 dark:bg-card/80 backdrop-blur-lg border border-border shadow-lg" 
-                    : "bg-transparent border-transparent"
-            )}>
+            <nav className="glass max-w-4xl mx-auto h-14 flex items-center justify-between px-6 rounded-full transition-all duration-300 font-mono">
 
                 {/* Logo */}
                 <motion.button
@@ -115,14 +109,12 @@ export default function Navbar() {
 
                 {/* Right Side Controls */}
                 <div className="flex items-center gap-3">
-                    <ThemeToggle />
-                    
                     <motion.a
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                         href="/Pranshu_Sharma_Resume.pdf"
                         download
-                        className="hidden sm:flex items-center gap-1 px-4 py-1.5 rounded border border-amber-500 bg-amber-500 hover:bg-amber-600 text-black text-xs font-bold transition-all duration-200"
+                        className="hidden sm:flex items-center gap-1 px-4 py-1.5 rounded border border-amber-500 bg-amber-500 hover:bg-amber-600 text-primary-foreground text-xs font-bold transition-all duration-200"
                     >
                         Resume
                         <ArrowUpRight className="w-3.5 h-3.5 stroke-[2.5px]" />
@@ -152,7 +144,7 @@ export default function Navbar() {
                                         {item.label}
                                     </button>
                                 ))}
-                                <Button className="w-full mt-4 bg-amber-500 text-black hover:bg-amber-600 font-bold font-mono" asChild>
+                                <Button className="w-full mt-4 bg-amber-500 text-primary-foreground hover:bg-amber-600 font-bold font-mono" asChild>
                                     <a href="/Pranshu_Sharma_Resume.pdf" download>
                                         Download Resume
                                     </a>

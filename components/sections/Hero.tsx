@@ -224,7 +224,7 @@ export default function Hero() {
                             <Button
                                 onClick={scrollToProjects}
                                 size="lg"
-                                className="bg-amber-500 hover:bg-amber-600 text-black rounded px-8 h-14 text-base font-semibold group font-mono"
+                                className="glow-primary bg-amber-500 hover:bg-amber-600 text-primary-foreground rounded px-8 h-14 text-base font-semibold group font-mono"
                             >
                                 Explore Pranshu Sharma
                                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

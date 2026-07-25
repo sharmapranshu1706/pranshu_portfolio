@@ -144,7 +144,7 @@ export default function Contact() {
                             <Button 
                                 type="submit" 
                                 disabled={sending}
-                                className="w-full bg-amber-500 hover:bg-amber-600 text-black h-11 rounded font-mono font-bold text-xs group"
+                                className="w-full bg-amber-500 hover:bg-amber-600 text-primary-foreground h-11 rounded font-mono font-bold text-xs group"
                             >
                                 {sending ? "Sending..." : "Send Message"}
                                 <Send className="w-3.5 h-3.5 ml-2 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />

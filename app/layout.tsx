@@ -99,7 +99,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${outfit.variable} ${firaCode.variable}`}
+      className={`${inter.variable} ${outfit.variable} ${firaCode.variable} dark`}
     >
       <body
         suppressHydrationWarning
@@ -108,7 +108,7 @@ export default function RootLayout({
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
-          enableSystem
+          forcedTheme="dark"
           disableTransitionOnChange
         >
           <ThemeColorMeta />

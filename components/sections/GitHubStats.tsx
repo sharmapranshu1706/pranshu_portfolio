@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -38,24 +37,14 @@ const STAT_CARDS: StatCard[] = [
     },
 ];
 
-function themeQuery(resolvedTheme: string | undefined): string {
-    const isDark = resolvedTheme === "dark";
-    const titleColor = isDark ? "f4ebd4" : "1c1c1e";
-    const textColor = isDark ? "8a8a8e" : "6c6c70";
-    const iconColor = isDark ? "f97316" : "ea580c";
-    return `theme=transparent&text_color=${textColor}&icon_color=${iconColor}&title_color=${titleColor}&bg_color=00000000`;
-}
+const THEME_QUERY = "theme=transparent&text_color=9ca3af&icon_color=8b5cf6&title_color=e5e5f0&bg_color=00000000";
 
 export default function GitHubStats() {
-    const { resolvedTheme } = useTheme();
     const [mounted, setMounted] = useState(false);
 
-useEffect(() => {
-    setMounted(true);
-// eslint-disable-next-line react-hooks/exhaustive-deps
-}, []); // Mount check for theme-dependent rendering
-
-    const themeQ = themeQuery(resolvedTheme);
+    useEffect(() => {
+        setMounted(true);
+    }, []);
 
     return (
         <SectionWrapper id="github-stats" className="py-32">
@@ -86,7 +75,7 @@ useEffect(() => {
                         >
                             {mounted && (
                                 <img
-                                    src={card.getUrl(themeQ)}
+                                    src={card.getUrl(THEME_QUERY)}
                                     alt={card.label}
                                     className="w-full h-auto"
                                     loading="lazy"

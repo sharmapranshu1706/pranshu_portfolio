@@ -9,7 +9,7 @@ export default function Footer() {
     : null;
 
     return (
-        <footer className="w-full border-t border-border bg-card dark:bg-[#0d0d0e] py-20 px-6 font-mono transition-colors duration-300">
+        <footer className="w-full border-t border-border bg-card py-20 px-6 font-mono transition-colors duration-300">
             <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
                     <div className="col-span-2 space-y-6">
@@ -21,14 +21,14 @@ export default function Footer() {
                                 Pranshu<span className="text-amber-500">.</span>sys
                             </span>
                         </div>
-                        <p className="text-slate-600 dark:text-slate-400 max-w-sm text-xs leading-relaxed">
+                        <p className="text-muted-foreground max-w-sm text-xs leading-relaxed">
                             Full Stack Systems Engineer specializing in robust backend architectures, decoupled microservices, and fluid interface design.
                         </p>
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Sitemap</h4>
-                        <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+                        <h4 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Sitemap</h4>
+                        <ul className="space-y-2 text-xs text-muted-foreground">
                             <li><a href="#about" className="hover:text-amber-500 transition-colors">/about</a></li>
                             <li><a href="#skills" className="hover:text-amber-500 transition-colors">/skills</a></li>
                             <li><a href="#projects" className="hover:text-amber-500 transition-colors">/projects</a></li>
@@ -37,8 +37,8 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Resources</h4>
-                        <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+                        <h4 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Resources</h4>
+                        <ul className="space-y-2 text-xs text-muted-foreground">
                             <li>
                                 <a
                                     href="https://github.com/sharmapranshu1706"
@@ -53,8 +53,8 @@ export default function Footer() {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">Connect</h4>
-                        <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
+                        <h4 className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest">Connect</h4>
+                        <p className="text-xs text-muted-foreground leading-relaxed">
                             Wanna chat? Contact anywhere below.
                         </p>
                         <div className="flex items-center gap-2 pt-1 flex-wrap">
@@ -71,7 +71,7 @@ export default function Footer() {
                                     target={href.startsWith("mailto") ? undefined : "_blank"}
                                     rel={href.startsWith("mailto") ? undefined : "noopener noreferrer"}
                                     aria-label={label}
-                                    className="w-9 h-9 rounded-full bg-slate-100 dark:bg-[#18181b]/50 text-slate-600 dark:text-slate-400 hover:bg-amber-500/10 hover:text-amber-500 dark:hover:bg-amber-500/10 dark:hover:text-amber-500 border border-slate-200 dark:border-slate-800 transition-colors flex items-center justify-center"
+                                    className="w-9 h-9 rounded-full bg-secondary text-muted-foreground hover:bg-amber-500/10 hover:text-amber-500 border border-border transition-colors flex items-center justify-center"
                                 >
                                     {icon}
                                 </a>
@@ -81,9 +81,9 @@ export default function Footer() {
                 </div>
 
                 <div className="pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-[9px] font-bold text-slate-500 uppercase tracking-wider">
+                    <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 text-[9px] font-bold text-muted-foreground uppercase tracking-wider">
                         <span>© {currentYear} Pranshu Sharma · Node: operational</span>
-                        <span className="h-3 w-px bg-slate-800 hidden sm:inline-block" />
+                        <span className="h-3 w-px bg-border hidden sm:inline-block" />
 
                         {/* Counter — only renders on client after hydration */}
                         {counterUrl && (
@@ -107,7 +107,7 @@ export default function Footer() {
                             </div>
                         )}
                     </div>
-                    <p className="text-[9px] font-bold text-slate-500 uppercase tracking-wider">
+                    <p className="text-[9px] font-bold text-muted-foreground uppercase tracking-wider">
                         Stay Curious // Built with passion
                     </p>
                 </div>
