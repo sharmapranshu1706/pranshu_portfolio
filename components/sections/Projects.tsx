@@ -90,7 +90,7 @@ function ProjectCard({ project }: { project: Project }) {
                         </div>
                     </>
                 )}
-                <div className="absolute top-4 left-4 z-10">
+                <div className="absolute top-0.5 left-1/2 -translate-x-1/2 z-10">
                     <span className="px-2 py-0.5 rounded border border-amber-500/30 bg-amber-500/5 text-amber-500 font-mono text-[9px] uppercase tracking-wider">
                         {project.category}
                     </span>
