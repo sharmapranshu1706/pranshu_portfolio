@@ -80,7 +80,7 @@ export const projects: Project[] = [
         liveUrl: "https://ai-fitness-app.vercel.app/",
         githubUrl: "https://github.com/sharmapranshu1706/AI-FITNESS-APP",
         featured: true,
-        image: "/images/portfolio_v3.png",
+        image: "/images/portfolio_v4.png",
     }
     
 ];

@@ -57,7 +57,7 @@ const PROJECTS: Project[] = [
         tech: ["Next.js 15", "Framer Motion", "Tailwind v4", "TypeScript", "Vercel"],
         github: "https://github.com/sharmapranshu1706/pranshu_portfolio",
         live: "https://pranshu-portfolio-v1.vercel.app/",
-        image: "/images/portfolio_v3.png",
+        image: "/images/portfolio_v4.png",
         category: "Frontend",
     }
 ];
